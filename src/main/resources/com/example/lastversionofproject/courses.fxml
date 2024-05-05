@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lastversionofproject.coursescontroller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@S8yJf3.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="gitbutton" layoutX="255.0" layoutY="74.0" mnemonicParsing="false" onAction="#github" text="Github course" />
+      <Button fx:id="backbutton" layoutX="24.0" layoutY="26.0" mnemonicParsing="false" onAction="#goback" text="Back" />
+   </children>
+</AnchorPane>

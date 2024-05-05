@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lastversionofproject.chatroomcontroller">
+   <children>
+      <Button fx:id="backbutton" layoutX="20.0" layoutY="300.0" mnemonicParsing="false" onAction="#goback" text="Back" />
+      <Button fx:id="showtaggedbutton" layoutX="204.0" layoutY="300.0" mnemonicParsing="false" onAction="#showtagged" text="Show tagged" />
+      <Button fx:id="taggingbutton" layoutX="340.0" layoutY="300.0" mnemonicParsing="false" onAction="#tagging" text="Tagging" />
+      <Button fx:id="removebutton" layoutX="438.0" layoutY="300.0" mnemonicParsing="false" onAction="#remove" text="Remove" />
+      <Button fx:id="sendbutton" layoutX="504.0" layoutY="351.0" mnemonicParsing="false" text="Send" />
+      <TextField fx:id="message_tf" layoutX="20.0" layoutY="351.0" prefHeight="25.0" prefWidth="454.0" promptText="Type message here" />
+      <TextField fx:id="index_tf" layoutX="114.0" layoutY="300.0" prefHeight="25.0" prefWidth="70.0" promptText="Index here" />
+      <ScrollPane fx:id="sp_main" prefHeight="281.0" prefWidth="600.0">
+         <content>
+            <VBox fx:id="vbox_main" prefHeight="280.0" prefWidth="600.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="updatebutton" layoutX="526.0" layoutY="300.0" mnemonicParsing="false" text="Update" />
+   </children>
+</AnchorPane>

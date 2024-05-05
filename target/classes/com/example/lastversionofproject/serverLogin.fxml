@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lastversionofproject.serverlogincontroller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="485.0" fitWidth="200.0" layoutX="-8.0" layoutY="-3.0">
+               <image>
+                  <Image url="@index.jkjk.jpg" />
+               </image>
+            </ImageView>
+            <Label blendMode="SRC_ATOP" layoutX="34.0" layoutY="146.0" text="creating server">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="5.0" layoutY="263.0" text="Enter the name of server to create" />
+            <TextField fx:id="servernamefield" layoutX="21.0" layoutY="317.0" />
+            <Label layoutX="20.0" layoutY="62.0" text="RD_Messanger" textFill="WHITE">
+               <font>
+                  <Font name="Goudy Old Style" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="createbutton" layoutX="59.0" layoutY="391.0" mnemonicParsing="false" onAction="#gotopvpublic" text="create" textFill="#d73939">
+               <font>
+                  <Font name="Baskerville Old Face" size="18.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="483.0" fitWidth="459.0" layoutX="-5.0" layoutY="-1.0">
+               <image>
+                  <Image url="@G6ry43.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="51.0" layoutY="33.0" text="Enter the name of server to enter">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ScrollPane fx:id="sp_main" layoutX="97.0" layoutY="103.0" prefHeight="293.0" prefWidth="256.0">
+               <content>
+                  <VBox fx:id="vbox_main" prefHeight="299.0" prefWidth="257.0" />
+               </content>
+            </ScrollPane>
+            <TextField fx:id="madeserverfield" layoutX="151.0" layoutY="407.0" />
+            <Button fx:id="enterbutton" layoutX="285.0" layoutY="444.0" mnemonicParsing="false" onAction="#gotopvpublic" text="Enter" />
+            <Button fx:id="backtofirst" layoutX="114.0" layoutY="444.0" mnemonicParsing="false" onAction="#backtofirstpage" text="Back" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

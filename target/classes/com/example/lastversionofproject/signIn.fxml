@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lastversionofproject.signincontroller">
+   <children>
+      <ImageView fitHeight="427.0" fitWidth="634.0" layoutX="-4.0" layoutY="-1.0">
+         <image>
+            <Image url="@login-backgrounds-128292-582669-5455043.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernamefield" layoutX="206.0" layoutY="125.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="1.0" green="0.9861111044883728" blue="0.9861111044883728" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </TextField>
+      <TextField fx:id="passwordfield" layoutX="239.0" layoutY="240.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </TextField>
+      <Text layoutX="457.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username" />
+      <Text layoutX="413.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password" />
+      <Text fill="#790d0d" fontSmoothingType="LCD" layoutX="272.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RD Messenger" textAlignment="CENTER">
+         <font>
+            <Font name="Californian FB Italic" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="279.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Safe &amp; Free" />
+      <Button fx:id="signinrequest" layoutX="379.0" layoutY="334.0" mnemonicParsing="false" onAction="#switchtoserverlogin" text="Sign in" />
+      <Button fx:id="backtofirstbt" layoutX="213.0" layoutY="334.0" mnemonicParsing="false" onAction="#backtofirst" prefHeight="25.0" prefWidth="50.0" text="Back" />
+   </children>
+</AnchorPane>

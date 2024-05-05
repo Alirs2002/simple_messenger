@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lastversionofproject.resourcescontroller">
+   <children>
+      <ImageView fitHeight="410.0" fitWidth="614.0" layoutY="-9.0" pickOnBounds="true">
+         <image>
+            <Image url="@HD-wallpaper-whie-yellow-wavy-lines-yellow-background-yellow-background.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="72.0" prefWidth="615.0" text="Best Java resources">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="backbutton" layoutX="22.0" layoutY="355.0" mnemonicParsing="false" onAction="#goback" text="Back" />
+      <Button fx:id="w3button" layoutX="247.0" layoutY="76.0" mnemonicParsing="false" onAction="#gow3" text="w3schools" />
+      <Button fx:id="awesbutton" layoutX="236.0" layoutY="129.0" mnemonicParsing="false" onAction="#goawes" text="Awesome Java" />
+      <Button fx:id="geeksbutton" layoutX="232.0" layoutY="184.0" mnemonicParsing="false" onAction="#gogeeks" text="Geeks for Geeks" />
+      <Button fx:id="programmizbutton" layoutX="243.0" layoutY="245.0" mnemonicParsing="false" onAction="#goprogrammiz" text="Programmiz" />
+      <Button fx:id="ppezbutton" layoutX="232.0" layoutY="301.0" mnemonicParsing="false" onAction="#godeveloppez" text="Developpez java" />
+   </children>
+</AnchorPane>
